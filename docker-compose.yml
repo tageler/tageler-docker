@@ -1,5 +1,5 @@
 mongodb:
-  image: mongodb:latest
+  image: mongo:latest
   volumes:
    - "/var/lib/mongodb:/var/lib/mongodb"
   ports:
