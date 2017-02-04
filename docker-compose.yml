@@ -6,9 +6,8 @@ mongodb:
    - "27017:27017"
 
 api:
-  image: tageler/api:latest
+  image: tageler/tageler-api:latest
   links:
    - mongodb
   environment:
    VIRTUAL_HOST: api.tageler.ch
-  
