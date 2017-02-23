@@ -14,7 +14,7 @@ sed -i \
   docker-compose.yml
 ```
 
-# Development
+## Development
 
 ```bash
 sed -i \
