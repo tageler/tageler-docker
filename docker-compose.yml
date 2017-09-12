@@ -17,5 +17,7 @@ api:
 
 web:
   image: tageler/tageler-frontend:latest
+  links:
+   - api:api
   environment:
    VIRTUAL_HOST: www.tageler.ch
