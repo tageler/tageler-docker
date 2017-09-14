@@ -21,3 +21,4 @@ web:
    - api:api
   environment:
    VIRTUAL_HOST: www.tageler.ch
+   API_HOST: api.tageler.ch
