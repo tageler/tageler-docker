@@ -8,7 +8,7 @@ services:
      - "27017:27017"
 
   api:
-    image: tageler/tageler-api:develop
+    image: tageler/tageler-api:latest
     depends_on:
       - mongodb
     expose:
@@ -19,7 +19,7 @@ services:
      VIRTUAL_PORT: 3000
 
   web:
-    image: tageler/tageler-frontend:develop
+    image: tageler/tageler-frontend:latest
     depends_on:
       - api
     environment:
