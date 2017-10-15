@@ -3,7 +3,7 @@ services:
   mongodb:
     image: mongo:latest
     volumes:
-     - "/var/lib/mongodb:/var/lib/mongodb"
+     - "/var/lib/mongo:/data/db"
     ports:
      - "27017:27017"
 
