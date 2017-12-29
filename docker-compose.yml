@@ -30,8 +30,17 @@ services:
       - "80"
     networks:
      - tageler-network
+     - traefik-web
     environment:
      VIRTUAL_HOST: www.tageler.ch
+    labels:
+     - "traefik.backend=web"
+     - "traefik.frontend.rule=Host:www.tageler.ch"
+
+
 
 networks:
   tageler-network:
+  traefik-web:
+    external:
+      name: traefik_webgateway
