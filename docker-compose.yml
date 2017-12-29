@@ -4,8 +4,8 @@ services:
     image: mongo:3.4
     volumes:
      - "/var/lib/mongo:/data/db"
-    ports:
-     - "27017:27017"
+    expose:
+     - "27017"
     networks:
      - tageler-network
 
@@ -37,6 +37,8 @@ services:
      - "traefik.backend=web"
      - "traefik.frontend.rule=Host:www.tageler.ch"
      - "traefik.port=80"
+     - "traefik.enable=true"
+     - "traefik.docker.network=traefik_webgateway"
 
 
 
