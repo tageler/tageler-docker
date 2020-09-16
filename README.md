@@ -1,5 +1,8 @@
 # Tageler Docker Compose
 
+# This project is archived, and no longer maintained.
+It will be replaced with a django based project, that will be open sourced at some point.
+
 ## Quickstart
 
 ```bash
